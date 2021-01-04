@@ -1,0 +1,158 @@
+/* Modified from w3schools.com */
+
+.slide-pamm, .slide-pokemoveset {
+    display: none;
+}
+
+.slide-img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* zoom effect on hover */
+.img-hover-zoom, .img-static {
+    overflow: hidden;
+    border-radius: 4px;
+    /* border: solid #434342 1px; */
+    box-shadow: 1px 2px 4px #333333;
+}
+
+.img-static {
+    height: 138.73px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: repeating-linear-gradient(
+        45deg,
+        #8ec583,
+        #8ec583 30px,
+        #529b31 30px,
+        #529b31 60px
+    );
+}
+
+.img-static img {
+    height: 80px;
+    width: 80px;
+}
+
+.img-static img:hover {
+    animation: shake 2s;
+    animation-iteration-count: infinite;
+}
+
+.img-static div {
+    font-size: 3rem;
+    font-weight: bold;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+  
+.img-hover-zoom:hover img {
+    transform: scale(1.15);
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    margin-bottom: 0.8rem;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: grey;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #434342;
+    font-size: 0.6rem;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 0 4px 0 4px;
+    /* border-left: solid #434342 1px;
+    border-bottom: solid #434342 1px; */
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@-webkit-keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+}

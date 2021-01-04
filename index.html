@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Alan Li - Portfolio</title>
+
+    <!--Included favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    
+    <!--Included stylesheets-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+    </div>
+
+    <div class="navbar">
+        <div class="navbar-title-container">
+            <div class="navbar-title">Alan Li</div>
+            <div class="navbar-subtitle">Developer</div>
+            <div class="navbar-title-small">AL</div>
+        </div>
+        <div class="navbar-links">
+            <div class="navbar-link-spacer"></div>
+            <a class="navbar-link" href="#about" id="aLink">About</a>
+            <a class="navbar-link" href="#projects" id="pLink">Projects</a>
+            <a class="navbar-link" href="#contact" id="cLink">Contact</a>
+        </div>
+    </div>
+
+    <div class="sections-box">
+        <div class="about"><a id="about"></a>
+            <div class="body-title-block">
+                <h1 class="body-title">About me</h1><div class="body-title-underline"></div>
+            </div>
+
+            <div class="about-top-block">
+
+                <img src="assets/images/portrait.jpg" alt="Profile picture" class="about-picture">
+
+                <div class="about-quote">
+                    <span class="big-quote">“</span>
+                    Hi, my name is Alan! I'm an up & coming full stack developer.
+                    <span class="big-quote">”</span>
+                </div>
+            </div>
+
+            <p class="about-body">
+                I'm a junior developer ready to commence a challenging career where I can continue to learn and have opportunities to touch different technologies. I bring skills in building full stack applications using in-demand technologies such as Ruby on Rails, Express with Node.js, and front-end JavaScript frameworks such as React.
+                I'm determined to invest in my team and view their success as well as my own. I hope to work with like-minded people on exciting projects and will allow me to grow personally and professionally.
+            </p>
+        </div>
+
+        
+        <div class="projects"><a id="projects"></a>
+            <div class="body-title-block">
+                <h1 class="body-title">Personal projects</h1><div class="body-title-underline"></div>
+            </div>
+
+            <div class="projects-container">
+                <div class="projects-card">
+                    <div class="projects-card-title">
+                        Movies Viewer
+                    </div>
+                    <div class="projects-card-subtitle">
+                        Small app providing brief introduction on movies
+                    </div>
+
+                    <div class="slideshow-container">
+                        <div class="slide-pamm fade">
+                            <div class="numbertext">1 / 6</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pamm/PAMM_1.png" alt="PAMM - landing screen" class="slide-img" id="testimg">
+                            </div>
+                        </div>
+                        <div class="slide-pamm fade">
+                            <div class="numbertext">2 / 6</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pamm/PAMM_2.png" alt="PAMM - work order management" class="slide-img">
+                            </div>
+                        </div>
+                        <div class="slide-pamm fade">
+                            <div class="numbertext">3 / 6</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pamm/PAMM_3.png" alt="PAMM - work order editing" class="slide-img">
+                            </div>
+                        </div>
+                        <div class="slide-pamm fade">
+                            <div class="numbertext">4 / 6</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pamm/PAMM_4.png" alt="PAMM - inventory management" class="slide-img">
+                            </div>
+                        </div>
+                        <div class="slide-pamm fade">
+                            <div class="numbertext">5 / 6</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pamm/PAMM_5.png" alt="PAMM - procedure management" class="slide-img">
+                            </div>
+                        </div>
+                        <div class="slide-pamm fade">
+                            <div class="numbertext">6 / 6</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pamm/PAMM_6.png" alt="PAMM - work order print/preview" class="slide-img">
+                            </div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    </div>
+
+                    <p class="projects-card-body">
+                        The app makes request to OMDB that responses with movie information, and will store movie information in the app’s own database. After users type in a movie title and click ‘search’, it will show a list of results of movies whose titles match the search key words. Users can click in and see detailed movie introduction.
+                    </p>
+
+                    <a class="projects-card-link" href="https://pamm.herokuapp.com/" target="_blank">
+                        Check it out here
+                    </a>
+                </div>
+
+                <div class="projects-card">
+                    <div class="projects-card-title">
+                        Tic Tac Toe
+                    </div>
+                    <div class="projects-card-subtitle extra-line">
+                        A classic game with CPU player  
+                    </div>
+
+                    <div class="slideshow-container">
+                        <div class="slide-pokemoveset fade">
+                            <div class="numbertext">1 / 3</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pokemoveset/Pokemoveset_1.png" alt="Pokémoveset - search screen" class="slide-img">
+                            </div>
+                        </div>
+                        <div class="slide-pokemoveset fade">
+                            <div class="numbertext">2 / 3</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pokemoveset/Pokemoveset_2.png" alt="Pokémoveset - search results screen" class="slide-img">
+                            </div>
+                        </div>
+                        <div class="slide-pokemoveset fade">
+                            <div class="numbertext">3 / 3</div>
+                            <div class="img-hover-zoom">
+                                <img src="assets/images/pokemoveset/Pokemoveset_3.png" alt="Pokémoveset - Saved movesets screen" class="slide-img">
+                            </div>
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    </div>
+
+                    <p class="projects-card-body">
+                        Pokémoveset is a web app that allows users to search for a Pokémon's learnable
+                        moves. Users can make a profile and log in to create and save movesets. The 
+                        backend structure is similar to that of PAMM, using Node.js, Express and MongoDB. 
+                        The frontend was built using jQuery with some Bootstrap elements. The data used 
+                        to display a Pokémon's available moves is parsed via an external API request 
+                        (<a class="inline-link" target="_blank" href="https://pokeapi.co/">PokéAPI</a>).
+                    </p>
+
+                    <a class="projects-card-link" href="https://pokemoveset.herokuapp.com/" target="_blank">
+                        Check it out here
+                    </a>
+                </div>
+
+                <div class="projects-card">
+                    <div class="projects-card-title">
+                        Weather Reporter
+                    </div>
+                    <div class="projects-card-subtitle extra-line">
+                        React weather forecast app 
+                    </div>
+
+                    <div class="slideshow-container">
+                        <div class="img-hover-zoom">
+                            <img src="assets/images/Memory_Game.png" alt="Memory Card Game screenshot" class="slide-img">
+                        </div>
+                    </div>
+
+                    <p class="projects-card-body">
+                        This memory card game was created prior to commencing the General Assembly
+                        SEI course. It is built using plain HTML, JavaScript, and CSS. The foundations of
+                        this project were formed by following tutorials provided via pre-course exercises.
+                        I took these exercises and expanded upon them to include functionality such as
+                        random card generation/ordering and the ability to select the number of cards to 
+                        play with.
+                    </p>
+
+                    <a class="projects-card-link" href="https://rickd101.github.io/Fundamentals_Memory_Game/" target="_blank">
+                        Check it out here
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact"><a id="contact"></a>
+            <div class="body-title-block">
+                <h1 class="body-title">Contact</h1>
+                <div class="body-title-underline"></div>
+            </div>
+
+            <div class="contact-container">
+                
+                <div class="contact-card">
+                    <a href="https://www.linkedin.com/in/jinlun-li/" target="_blank">
+                        <div class="contact-card-text">
+                            www.linkedin.com/in/jinlun-li/
+                        </div>
+                        <div class="contact-card-title">
+                            LinkedIn
+                        </div>
+                        <div class="contact-card-logo">
+                            <img src="assets/images/LI-In-Bug.png" alt="LinkedIn logo">
+                        </div>
+                        <div class="contact-card-highlight"></div>
+                    </a>
+                </div>
+
+
+                <div class="contact-card">
+                    <a href="https://github.com/allen0lee" target="_blank">
+                        <div class="contact-card-text">
+                            github.com/allen0lee
+                        </div>
+                        <div class="contact-card-title">
+                            GitHub
+                        </div>
+                        <div class="contact-card-logo">
+                            <img src="assets/images/GitHub-Mark-120px-plus.png" alt="GitHub logo">
+                        </div>
+                        <div class="contact-card-highlight"></div>
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <a href="https://bit.ly/37fwGjt" target="_blank">
+                        <div class="contact-card-text">
+                            bit.ly/37fwGjt
+                        </div>
+                        <div class="contact-card-title">
+                            Resume
+                        </div>
+                        <div class="contact-card-logo">
+                            <img src="assets/images/cv-logo.png" alt="resume logo">
+                        </div>
+                        <div class="contact-card-highlight"></div>
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <a href="mailto:allen0lee@gmail.com" target="_blank">
+                        <div class="contact-card-text">
+                            allen0lee@gmail.com
+                        </div>
+                        <div class="contact-card-title">
+                            Email
+                        </div>
+                        <div class="contact-card-logo">
+                            <img src="assets/images/email-logo.png" alt="email logo">
+                        </div>
+                        <div class="contact-card-highlight"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2020 - Alan Li | 
+        <a href="https://iconscout.com/icons/ruby" target="_blank" class="inline-link-footer">Ruby Icon</a> by 
+        <a href="https://iconscout.com/contributors/icon-mafia" target="_blank" class="inline-link-footer">Icon Mafia</a> |
+        <a href="https://iconscout.com/icons/email" target="_blank" class="inline-link-footer">Email Icon</a> by 
+        <a href="https://iconscout.com/contributors/vincent-le-moign" target="_blank" class="inline-link-footer">Vincent Le Moign</a>
+    </div>
+    
+    <script src="js/scrollTracking.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+
+</html>

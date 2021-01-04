@@ -1,0 +1,202 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar-title, .navbar-subtitle {
+        display: none;
+    }
+
+    .navbar-title-small {
+        display: block;
+    }
+
+    .sections-box {
+        padding: 6rem 0.6rem 0;
+    }
+
+    .body-title {
+        font-size: 1.6rem;
+        margin-right: 0.6rem;
+    }
+
+    .body-title-underline {
+        border-bottom: solid #a9e3e3 0.2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .about-top-block {
+        display: block;
+        text-align: center;
+        margin-bottom: 1.6rem;
+    }
+
+    .about-picture {
+        margin: 2rem auto;
+        height: 200px;
+        width: 200px;
+    }
+
+    .about-quote {
+        margin: auto;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .big-quote {
+        font-size: 3rem;
+        line-height: 0;
+    }
+
+    .about-body {
+        margin: 1rem 0.2rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .about-top-block {
+        margin-bottom: 1.2rem;
+    }
+
+    :target::before {
+        content: "";
+        display: block;
+        height: 6rem; /* fixed header height*/
+        margin: -6rem 0 0; /* negative fixed header height */
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .contact-card-text {
+        display: none;
+    }
+
+    .contact-card, .contact-card-highlight {
+        width: 195px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .sections-box {
+        padding: 7rem 2.3rem 0;
+    }
+
+    .about-picture {
+        margin: 1.8rem 0 0 2rem;
+        height: 160px;
+        width: 160px;
+    }
+
+    .about-quote {
+        margin: 3.6rem 2rem 0 3rem;
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .big-quote {
+        font-size: 2rem;
+        line-height: 0;
+    }
+
+    .about-body {
+        margin: 1.6rem;
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .about-top-block {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .sections-box {
+        padding: 7rem 3.4rem 0;
+    }
+
+    .about-picture {
+        margin: 2.0rem 0 0 2.8rem;
+        height: 200px;
+        width: 200px;
+    }
+
+    .about-quote {
+        margin: 5rem 2.8rem 0 3.6rem;
+    }
+
+    .about-body {
+        margin: 1.6rem;
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+    }
+
+    .about-top-block {
+        margin-bottom: 2.2rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .sections-box {
+        padding: 7rem 4.8rem 0;
+    }
+
+    .about-picture {
+        margin: 2.2rem 0 0 3.6rem;
+        height: 240px;
+        width: 240px;
+    }
+
+    .about-quote {
+        margin: 5.2rem 3.6rem 0 3.8rem;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    .big-quote {
+        font-size: 2.8rem;
+    }
+
+    .about-body {
+        margin: 1.8rem;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+
+    .about-top-block {
+        margin-bottom: 2.6rem;
+    }
+}
+
+/* Large devices (large laptops/desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .sections-box {
+        padding: 7rem 6rem 0;
+        max-width: 1426px;
+    }
+
+    .about-picture {
+        margin: 2.4rem 0 0 4rem;
+        height: 280px;
+        width: 280px;
+    }
+
+    .about-quote {
+        margin: 8rem 4rem 0 4rem;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .big-quote {
+        font-size: 3rem;
+    }
+
+    .about-body {
+        margin: 2rem;
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    .about-top-block {
+        margin-bottom: 3rem;
+    }
+}

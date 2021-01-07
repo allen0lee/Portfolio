@@ -1,7 +1,7 @@
 /* Modified from w3schools.com */
 
 const slideIndex = [1, 1, 1];
-const slideId = ["slide-moviesviewer", "slide-tictactoe", "slide-tictactoe1"]
+const slideId = ["slide-moviesviewer", "slide-tictactoe", "slide-myweatherapp"]
 
 const plusSlides = (n, no) => {
     showSlides(slideIndex[no] += n, no);
